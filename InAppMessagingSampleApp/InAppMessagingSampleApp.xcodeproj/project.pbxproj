@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E2921EC18875A9300835BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EB18875A9300835BBD /* Foundation.framework */; };
+		6E2921EE18875A9300835BBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921ED18875A9300835BBD /* CoreGraphics.framework */; };
+		6E2921F018875A9300835BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EF18875A9300835BBD /* UIKit.framework */; };
+		6E2921F618875A9300835BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E2921F418875A9300835BBD /* InfoPlist.strings */; };
+		6E2921F818875A9300835BBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2921F718875A9300835BBD /* main.m */; };
+		6E2921FC18875A9300835BBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2921FB18875A9300835BBD /* AppDelegate.m */; };
+		6E2921FF18875A9300835BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2921FD18875A9300835BBD /* Main.storyboard */; };
+		6E29220218875A9300835BBD /* MessageComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E29220118875A9300835BBD /* MessageComposer.m */; };
+		6E29220418875A9300835BBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E29220318875A9300835BBD /* Images.xcassets */; };
+		6E29220B18875A9300835BBD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29220A18875A9300835BBD /* XCTest.framework */; };
+		6E29220C18875A9300835BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EB18875A9300835BBD /* Foundation.framework */; };
+		6E29220D18875A9400835BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EF18875A9300835BBD /* UIKit.framework */; };
+		6E29221518875A9400835BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E29221318875A9400835BBD /* InfoPlist.strings */; };
+		6E29221718875A9400835BBD /* InAppMessagingSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E29221618875A9400835BBD /* InAppMessagingSampleAppTests.m */; };
+		6E29222318875BBE00835BBD /* libInAppMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222218875BBE00835BBD /* libInAppMessaging.a */; };
+		6E29222518875BC200835BBD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222418875BC200835BBD /* MobileCoreServices.framework */; };
+		6E29222718875BC800835BBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222618875BC800835BBD /* SystemConfiguration.framework */; };
+		6E4A5E901888F95E006295CC /* AttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A5E8F1888F95E006295CC /* AttachmentCell.m */; };
+		6E8B94171898777100A51D00 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8B94151898777100A51D00 /* AddressBook.framework */; };
+		6E8B94181898777100A51D00 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8B94161898777100A51D00 /* AddressBookUI.framework */; };
+		6EA0D2AC18A5A54E002B19F8 /* NSArray+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA0D2AB18A5A54E002B19F8 /* NSArray+Reverse.m */; };
+		6EE0F6CA189A41760032BAFD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0F6C9189A41760032BAFD /* Utils.m */; };
+		6EE6179318AB3903007E80DD /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE6179218AB3903007E80DD /* Conversation.m */; };
+		6EE6179518AB3E92007E80DD /* TestConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE6179418AB3E92007E80DD /* TestConversation.m */; };
+		6EE6179618AB3EC2007E80DD /* libInAppMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222218875BBE00835BBD /* libInAppMessaging.a */; };
+		9515F5CF189C0A3F00F7D158 /* ContactConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9515F5CD189C0A3F00F7D158 /* ContactConvertor.m */; };
+		95403C5C1898216B00424BE9 /* AttachmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95403C5B1898216B00424BE9 /* AttachmentsViewController.m */; };
+		95403C5F1898217E00424BE9 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95403C5E1898217E00424BE9 /* ImageViewController.m */; };
+		95403C621898218800424BE9 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95403C611898218800424BE9 /* TextViewController.m */; };
+		956DAA501899BE4400F419C4 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 956DAA4F1899BE4400F419C4 /* ImageCell.m */; };
+		958D4547188D9276007CE4C6 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D4546188D9276007CE4C6 /* MessageCell.m */; };
+		958D454A188DADDF007CE4C6 /* MessageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D4549188DADDF007CE4C6 /* MessageListViewController.m */; };
+		95A31D861899680100AF5A55 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A31D851899680100AF5A55 /* TitleView.m */; };
+		95E104E31892C896003D91CA /* IncomingConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E104E21892C896003D91CA /* IncomingConversationCell.m */; };
+		95E104E61892C8AA003D91CA /* OutgoingConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E104E51892C8AA003D91CA /* OutgoingConversationCell.m */; };
+		95E104E9189317B4003D91CA /* ConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E104E8189317B4003D91CA /* ConversationCell.m */; };
+		95E73C0D1891D11F0061A12E /* ConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E73C0C1891D11F0061A12E /* ConversationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E29220E18875A9400835BBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2921E018875A9300835BBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E2921E718875A9300835BBD;
+			remoteInfo = InAppMessagingSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E2921E818875A9300835BBD /* InAppMessagingSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppMessagingSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2921EB18875A9300835BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E2921ED18875A9300835BBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E2921EF18875A9300835BBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E2921F318875A9300835BBD /* InAppMessagingSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InAppMessagingSampleApp-Info.plist"; sourceTree = "<group>"; };
+		6E2921F518875A9300835BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E2921F718875A9300835BBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E2921F918875A9300835BBD /* InAppMessagingSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InAppMessagingSampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		6E2921FA18875A9300835BBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E2921FB18875A9300835BBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E2921FE18875A9300835BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E29220018875A9300835BBD /* MessageComposer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageComposer.h; sourceTree = "<group>"; };
+		6E29220118875A9300835BBD /* MessageComposer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageComposer.m; sourceTree = "<group>"; };
+		6E29220318875A9300835BBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E29220918875A9300835BBD /* InAppMessagingSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InAppMessagingSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E29220A18875A9300835BBD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E29221218875A9400835BBD /* InAppMessagingSampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InAppMessagingSampleAppTests-Info.plist"; sourceTree = "<group>"; };
+		6E29221418875A9400835BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E29221618875A9400835BBD /* InAppMessagingSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppMessagingSampleAppTests.m; sourceTree = "<group>"; };
+		6E29222218875BBE00835BBD /* libInAppMessaging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInAppMessaging.a; path = "../../../../../../../../Library/Developer/Xcode/DerivedData/InAppMessaging-cshypgaqkqmrgpfvnhquvnczyxhx/Build/Products/Debug-iphoneos/libInAppMessaging.a"; sourceTree = "<group>"; };
+		6E29222418875BC200835BBD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6E29222618875BC800835BBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6E4A5E8F1888F95E006295CC /* AttachmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentCell.m; sourceTree = "<group>"; };
+		6E8B94151898777100A51D00 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6E8B94161898777100A51D00 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		6EA0D2AA18A5A54E002B19F8 /* NSArray+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reverse.h"; sourceTree = "<group>"; };
+		6EA0D2AB18A5A54E002B19F8 /* NSArray+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reverse.m"; sourceTree = "<group>"; };
+		6EE0F6C8189A41760032BAFD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		6EE0F6C9189A41760032BAFD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		6EE6179118AB3903007E80DD /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		6EE6179218AB3903007E80DD /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		6EE6179418AB3E92007E80DD /* TestConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestConversation.m; sourceTree = "<group>"; };
+		9515F5CD189C0A3F00F7D158 /* ContactConvertor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactConvertor.m; sourceTree = "<group>"; };
+		9515F5CE189C0A3F00F7D158 /* ContactConvertor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactConvertor.h; sourceTree = "<group>"; };
+		95403C5A1898216B00424BE9 /* AttachmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentsViewController.h; sourceTree = "<group>"; };
+		95403C5B1898216B00424BE9 /* AttachmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentsViewController.m; sourceTree = "<group>"; };
+		95403C5D1898217E00424BE9 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		95403C5E1898217E00424BE9 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		95403C601898218800424BE9 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		95403C611898218800424BE9 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		956DAA4B1899911C00F419C4 /* AttachmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentCell.h; sourceTree = "<group>"; };
+		956DAA4E1899BE4400F419C4 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		956DAA4F1899BE4400F419C4 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		958D4545188D9276007CE4C6 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		958D4546188D9276007CE4C6 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		958D4548188DADDF007CE4C6 /* MessageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListViewController.h; sourceTree = "<group>"; };
+		958D4549188DADDF007CE4C6 /* MessageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListViewController.m; sourceTree = "<group>"; };
+		95A31D841899680100AF5A55 /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
+		95A31D851899680100AF5A55 /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		95E104E11892C896003D91CA /* IncomingConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingConversationCell.h; sourceTree = "<group>"; };
+		95E104E21892C896003D91CA /* IncomingConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingConversationCell.m; sourceTree = "<group>"; };
+		95E104E41892C8AA003D91CA /* OutgoingConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutgoingConversationCell.h; sourceTree = "<group>"; };
+		95E104E51892C8AA003D91CA /* OutgoingConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutgoingConversationCell.m; sourceTree = "<group>"; };
+		95E104E7189317B4003D91CA /* ConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationCell.h; sourceTree = "<group>"; };
+		95E104E8189317B4003D91CA /* ConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationCell.m; sourceTree = "<group>"; };
+		95E73C0B1891D11F0061A12E /* ConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationViewController.h; sourceTree = "<group>"; };
+		95E73C0C1891D11F0061A12E /* ConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E2921E518875A9300835BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8B94171898777100A51D00 /* AddressBook.framework in Frameworks */,
+				6E8B94181898777100A51D00 /* AddressBookUI.framework in Frameworks */,
+				6E29222718875BC800835BBD /* SystemConfiguration.framework in Frameworks */,
+				6E29222518875BC200835BBD /* MobileCoreServices.framework in Frameworks */,
+				6E29222318875BBE00835BBD /* libInAppMessaging.a in Frameworks */,
+				6E2921EE18875A9300835BBD /* CoreGraphics.framework in Frameworks */,
+				6E2921F018875A9300835BBD /* UIKit.framework in Frameworks */,
+				6E2921EC18875A9300835BBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E29220618875A9300835BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE6179618AB3EC2007E80DD /* libInAppMessaging.a in Frameworks */,
+				6E29220B18875A9300835BBD /* XCTest.framework in Frameworks */,
+				6E29220D18875A9400835BBD /* UIKit.framework in Frameworks */,
+				6E29220C18875A9300835BBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E2921DF18875A9300835BBD = {
+			isa = PBXGroup;
+			children = (
+				6E2921F118875A9300835BBD /* InAppMessagingSampleApp */,
+				6E29221018875A9400835BBD /* InAppMessagingSampleAppTests */,
+				6E2921EA18875A9300835BBD /* Frameworks */,
+				6E2921E918875A9300835BBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E2921E918875A9300835BBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E2921E818875A9300835BBD /* InAppMessagingSampleApp.app */,
+				6E29220918875A9300835BBD /* InAppMessagingSampleAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E2921EA18875A9300835BBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B94151898777100A51D00 /* AddressBook.framework */,
+				6E8B94161898777100A51D00 /* AddressBookUI.framework */,
+				6E29222618875BC800835BBD /* SystemConfiguration.framework */,
+				6E29222418875BC200835BBD /* MobileCoreServices.framework */,
+				6E29222218875BBE00835BBD /* libInAppMessaging.a */,
+				6E2921EB18875A9300835BBD /* Foundation.framework */,
+				6E2921ED18875A9300835BBD /* CoreGraphics.framework */,
+				6E2921EF18875A9300835BBD /* UIKit.framework */,
+				6E29220A18875A9300835BBD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E2921F118875A9300835BBD /* InAppMessagingSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				6E2921FA18875A9300835BBD /* AppDelegate.h */,
+				6E2921FB18875A9300835BBD /* AppDelegate.m */,
+				6E2921FD18875A9300835BBD /* Main.storyboard */,
+				6E29220018875A9300835BBD /* MessageComposer.h */,
+				6E29220118875A9300835BBD /* MessageComposer.m */,
+				6E4A5E8F1888F95E006295CC /* AttachmentCell.m */,
+				956DAA4B1899911C00F419C4 /* AttachmentCell.h */,
+				6E29220318875A9300835BBD /* Images.xcassets */,
+				6EE6179118AB3903007E80DD /* Conversation.h */,
+				6EE6179218AB3903007E80DD /* Conversation.m */,
+				6E2921F218875A9300835BBD /* Supporting Files */,
+				956DAA441899842100F419C4 /* Message List */,
+				956DAA431899840C00F419C4 /* Conversation */,
+				956DAA42189983FF00F419C4 /* Attachments */,
+				6EE0F6C8189A41760032BAFD /* Utils.h */,
+				6EE0F6C9189A41760032BAFD /* Utils.m */,
+				6EA0D2AA18A5A54E002B19F8 /* NSArray+Reverse.h */,
+				6EA0D2AB18A5A54E002B19F8 /* NSArray+Reverse.m */,
+			);
+			path = InAppMessagingSampleApp;
+			sourceTree = "<group>";
+		};
+		6E2921F218875A9300835BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E2921F318875A9300835BBD /* InAppMessagingSampleApp-Info.plist */,
+				6E2921F418875A9300835BBD /* InfoPlist.strings */,
+				6E2921F718875A9300835BBD /* main.m */,
+				6E2921F918875A9300835BBD /* InAppMessagingSampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E29221018875A9400835BBD /* InAppMessagingSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E29221618875A9400835BBD /* InAppMessagingSampleAppTests.m */,
+				6E29221118875A9400835BBD /* Supporting Files */,
+				6EE6179418AB3E92007E80DD /* TestConversation.m */,
+			);
+			path = InAppMessagingSampleAppTests;
+			sourceTree = "<group>";
+		};
+		6E29221118875A9400835BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E29221218875A9400835BBD /* InAppMessagingSampleAppTests-Info.plist */,
+				6E29221318875A9400835BBD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		956DAA42189983FF00F419C4 /* Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				95403C5A1898216B00424BE9 /* AttachmentsViewController.h */,
+				95403C5B1898216B00424BE9 /* AttachmentsViewController.m */,
+				95403C5D1898217E00424BE9 /* ImageViewController.h */,
+				95403C5E1898217E00424BE9 /* ImageViewController.m */,
+				95403C601898218800424BE9 /* TextViewController.h */,
+				95403C611898218800424BE9 /* TextViewController.m */,
+				95A31D841899680100AF5A55 /* TitleView.h */,
+				95A31D851899680100AF5A55 /* TitleView.m */,
+				956DAA4E1899BE4400F419C4 /* ImageCell.h */,
+				956DAA4F1899BE4400F419C4 /* ImageCell.m */,
+			);
+			name = Attachments;
+			sourceTree = "<group>";
+		};
+		956DAA431899840C00F419C4 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				95E73C0B1891D11F0061A12E /* ConversationViewController.h */,
+				95E73C0C1891D11F0061A12E /* ConversationViewController.m */,
+				95E104E7189317B4003D91CA /* ConversationCell.h */,
+				95E104E8189317B4003D91CA /* ConversationCell.m */,
+				95E104E11892C896003D91CA /* IncomingConversationCell.h */,
+				95E104E21892C896003D91CA /* IncomingConversationCell.m */,
+				95E104E41892C8AA003D91CA /* OutgoingConversationCell.h */,
+				95E104E51892C8AA003D91CA /* OutgoingConversationCell.m */,
+			);
+			name = Conversation;
+			sourceTree = "<group>";
+		};
+		956DAA441899842100F419C4 /* Message List */ = {
+			isa = PBXGroup;
+			children = (
+				958D4548188DADDF007CE4C6 /* MessageListViewController.h */,
+				958D4549188DADDF007CE4C6 /* MessageListViewController.m */,
+				958D4545188D9276007CE4C6 /* MessageCell.h */,
+				958D4546188D9276007CE4C6 /* MessageCell.m */,
+				9515F5CD189C0A3F00F7D158 /* ContactConvertor.m */,
+				9515F5CE189C0A3F00F7D158 /* ContactConvertor.h */,
+			);
+			name = "Message List";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E2921E718875A9300835BBD /* InAppMessagingSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E29221A18875A9400835BBD /* Build configuration list for PBXNativeTarget "InAppMessagingSampleApp" */;
+			buildPhases = (
+				6E2921E418875A9300835BBD /* Sources */,
+				6E2921E518875A9300835BBD /* Frameworks */,
+				6E2921E618875A9300835BBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InAppMessagingSampleApp;
+			productName = InAppMessagingSampleApp;
+			productReference = 6E2921E818875A9300835BBD /* InAppMessagingSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E29220818875A9300835BBD /* InAppMessagingSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E29221D18875A9400835BBD /* Build configuration list for PBXNativeTarget "InAppMessagingSampleAppTests" */;
+			buildPhases = (
+				6E29220518875A9300835BBD /* Sources */,
+				6E29220618875A9300835BBD /* Frameworks */,
+				6E29220718875A9300835BBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E29220F18875A9400835BBD /* PBXTargetDependency */,
+			);
+			name = InAppMessagingSampleAppTests;
+			productName = InAppMessagingSampleAppTests;
+			productReference = 6E29220918875A9300835BBD /* InAppMessagingSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E2921E018875A9300835BBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "AT&T";
+				TargetAttributes = {
+					6E29220818875A9300835BBD = {
+						TestTargetID = 6E2921E718875A9300835BBD;
+					};
+				};
+			};
+			buildConfigurationList = 6E2921E318875A9300835BBD /* Build configuration list for PBXProject "InAppMessagingSampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E2921DF18875A9300835BBD;
+			productRefGroup = 6E2921E918875A9300835BBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E2921E718875A9300835BBD /* InAppMessagingSampleApp */,
+				6E29220818875A9300835BBD /* InAppMessagingSampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E2921E618875A9300835BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E29220418875A9300835BBD /* Images.xcassets in Resources */,
+				6E2921F618875A9300835BBD /* InfoPlist.strings in Resources */,
+				6E2921FF18875A9300835BBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E29220718875A9300835BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E29221518875A9400835BBD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E2921E418875A9300835BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E73C0D1891D11F0061A12E /* ConversationViewController.m in Sources */,
+				95A31D861899680100AF5A55 /* TitleView.m in Sources */,
+				6EE0F6CA189A41760032BAFD /* Utils.m in Sources */,
+				958D454A188DADDF007CE4C6 /* MessageListViewController.m in Sources */,
+				95E104E9189317B4003D91CA /* ConversationCell.m in Sources */,
+				6E29220218875A9300835BBD /* MessageComposer.m in Sources */,
+				95403C5F1898217E00424BE9 /* ImageViewController.m in Sources */,
+				95E104E61892C8AA003D91CA /* OutgoingConversationCell.m in Sources */,
+				9515F5CF189C0A3F00F7D158 /* ContactConvertor.m in Sources */,
+				6EA0D2AC18A5A54E002B19F8 /* NSArray+Reverse.m in Sources */,
+				6E2921FC18875A9300835BBD /* AppDelegate.m in Sources */,
+				956DAA501899BE4400F419C4 /* ImageCell.m in Sources */,
+				6EE6179318AB3903007E80DD /* Conversation.m in Sources */,
+				6E4A5E901888F95E006295CC /* AttachmentCell.m in Sources */,
+				95403C621898218800424BE9 /* TextViewController.m in Sources */,
+				958D4547188D9276007CE4C6 /* MessageCell.m in Sources */,
+				95403C5C1898216B00424BE9 /* AttachmentsViewController.m in Sources */,
+				95E104E31892C896003D91CA /* IncomingConversationCell.m in Sources */,
+				6E2921F818875A9300835BBD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E29220518875A9300835BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE6179518AB3E92007E80DD /* TestConversation.m in Sources */,
+				6E29221718875A9400835BBD /* InAppMessagingSampleAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E29220F18875A9400835BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E2921E718875A9300835BBD /* InAppMessagingSampleApp */;
+			targetProxy = 6E29220E18875A9400835BBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E2921F418875A9300835BBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2921F518875A9300835BBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E2921FD18875A9300835BBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2921FE18875A9300835BBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E29221318875A9400835BBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E29221418875A9400835BBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E29221818875A9400835BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E29221918875A9400835BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E29221B18875A9400835BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InAppMessagingSampleApp/InAppMessagingSampleApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-5.0.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"../InAppMessaging/**",
+				);
+				INFOPLIST_FILE = "InAppMessagingSampleApp/InAppMessagingSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"../InAppMessaging/**",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AD750561-7307-4CFD-B52E-0DE4784E558A";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E29221C18875A9400835BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InAppMessagingSampleApp/InAppMessagingSampleApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-5.0.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"../InAppMessaging/**",
+				);
+				INFOPLIST_FILE = "InAppMessagingSampleApp/InAppMessagingSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"../InAppMessaging/**",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "AD750561-7307-4CFD-B52E-0DE4784E558A";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E29221E18875A9400835BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InAppMessagingSampleApp.app/InAppMessagingSampleApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InAppMessagingSampleApp/InAppMessagingSampleApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-5.0.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../InAppMessaging,
+				);
+				INFOPLIST_FILE = "InAppMessagingSampleAppTests/InAppMessagingSampleAppTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/InAppMessaging-cshypgaqkqmrgpfvnhquvnczyxhx/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6E29221F18875A9400835BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InAppMessagingSampleApp.app/InAppMessagingSampleApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InAppMessagingSampleApp/InAppMessagingSampleApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-5.0.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../InAppMessaging,
+				);
+				INFOPLIST_FILE = "InAppMessagingSampleAppTests/InAppMessagingSampleAppTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/InAppMessaging-cshypgaqkqmrgpfvnhquvnczyxhx/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E2921E318875A9300835BBD /* Build configuration list for PBXProject "InAppMessagingSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E29221818875A9400835BBD /* Debug */,
+				6E29221918875A9400835BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E29221A18875A9400835BBD /* Build configuration list for PBXNativeTarget "InAppMessagingSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E29221B18875A9400835BBD /* Debug */,
+				6E29221C18875A9400835BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E29221D18875A9400835BBD /* Build configuration list for PBXNativeTarget "InAppMessagingSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E29221E18875A9400835BBD /* Debug */,
+				6E29221F18875A9400835BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E2921E018875A9300835BBD /* Project object */;
+}
