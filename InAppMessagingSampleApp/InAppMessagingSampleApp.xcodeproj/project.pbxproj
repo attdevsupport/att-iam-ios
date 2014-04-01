@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E04718718EB7ED8001201EA /* libInAppMessaging-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E04717F18EB7ED8001201EA /* libInAppMessaging-.a */; };
 		6E2921EC18875A9300835BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EB18875A9300835BBD /* Foundation.framework */; };
 		6E2921EE18875A9300835BBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921ED18875A9300835BBD /* CoreGraphics.framework */; };
 		6E2921F018875A9300835BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EF18875A9300835BBD /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		6E29220D18875A9400835BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2921EF18875A9300835BBD /* UIKit.framework */; };
 		6E29221518875A9400835BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E29221318875A9400835BBD /* InfoPlist.strings */; };
 		6E29221718875A9400835BBD /* InAppMessagingSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E29221618875A9400835BBD /* InAppMessagingSampleAppTests.m */; };
-		6E29222318875BBE00835BBD /* libInAppMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222218875BBE00835BBD /* libInAppMessaging.a */; };
 		6E29222518875BC200835BBD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222418875BC200835BBD /* MobileCoreServices.framework */; };
 		6E29222718875BC800835BBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29222618875BC800835BBD /* SystemConfiguration.framework */; };
 		6E4A5E901888F95E006295CC /* AttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A5E8F1888F95E006295CC /* AttachmentCell.m */; };
@@ -57,6 +57,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E04716218EB7ED8001201EA /* ATTAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTAppConfiguration.h; sourceTree = "<group>"; };
+		6E04716318EB7ED8001201EA /* ATTOAuthClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTOAuthClient.h; sourceTree = "<group>"; };
+		6E04716418EB7ED8001201EA /* ATTOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTOAuthViewController.h; sourceTree = "<group>"; };
+		6E04716518EB7ED8001201EA /* ATTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTRequest.h; sourceTree = "<group>"; };
+		6E04716618EB7ED8001201EA /* ATTRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTRequestManager.h; sourceTree = "<group>"; };
+		6E04716718EB7ED8001201EA /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		6E04716818EB7ED8001201EA /* DataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTests.h; sourceTree = "<group>"; };
+		6E04716918EB7ED8001201EA /* IAMCreateMessageIndexRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMCreateMessageIndexRequest.h; sourceTree = "<group>"; };
+		6E04716A18EB7ED8001201EA /* IAMDeleteMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMDeleteMessageRequest.h; sourceTree = "<group>"; };
+		6E04716B18EB7ED8001201EA /* IAMDeleteMessagesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMDeleteMessagesRequest.h; sourceTree = "<group>"; };
+		6E04716C18EB7ED8001201EA /* IAMDelta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMDelta.h; sourceTree = "<group>"; };
+		6E04716D18EB7ED8001201EA /* IAMDeltaDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMDeltaDetail.h; sourceTree = "<group>"; };
+		6E04716E18EB7ED8001201EA /* IAMDeltasUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMDeltasUpdateRequest.h; sourceTree = "<group>"; };
+		6E04716F18EB7ED8001201EA /* IAMDeltasUpdateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMDeltasUpdateResponse.h; sourceTree = "<group>"; };
+		6E04717018EB7ED8001201EA /* IAMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMManager.h; sourceTree = "<group>"; };
+		6E04717118EB7ED8001201EA /* IAMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMMessage.h; sourceTree = "<group>"; };
+		6E04717218EB7ED8001201EA /* IAMMessageContentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMMessageContentRequest.h; sourceTree = "<group>"; };
+		6E04717318EB7ED8001201EA /* IAMMessageIndexInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMMessageIndexInfo.h; sourceTree = "<group>"; };
+		6E04717418EB7ED8001201EA /* IAMMessageIndexInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMMessageIndexInfoRequest.h; sourceTree = "<group>"; };
+		6E04717518EB7ED8001201EA /* IAMMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMMessageRequest.h; sourceTree = "<group>"; };
+		6E04717618EB7ED8001201EA /* IAMMessagesListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMMessagesListRequest.h; sourceTree = "<group>"; };
+		6E04717718EB7ED8001201EA /* IAMNotificationConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMNotificationConnection.h; sourceTree = "<group>"; };
+		6E04717818EB7ED8001201EA /* IAMNotificationConnectionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMNotificationConnectionRequest.h; sourceTree = "<group>"; };
+		6E04717918EB7ED8001201EA /* IAMQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMQueue.h; sourceTree = "<group>"; };
+		6E04717A18EB7ED8001201EA /* IAMSendMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMSendMessageRequest.h; sourceTree = "<group>"; };
+		6E04717B18EB7ED8001201EA /* IAMUpdateMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMUpdateMessageRequest.h; sourceTree = "<group>"; };
+		6E04717C18EB7ED8001201EA /* IAMUpdateMessagesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMUpdateMessagesRequest.h; sourceTree = "<group>"; };
+		6E04717D18EB7ED8001201EA /* IAMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAMUtils.h; sourceTree = "<group>"; };
+		6E04717E18EB7ED8001201EA /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		6E04717F18EB7ED8001201EA /* libInAppMessaging-.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInAppMessaging-.a"; sourceTree = "<group>"; };
+		6E04718018EB7ED8001201EA /* MMSContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSContent.h; sourceTree = "<group>"; };
+		6E04718118EB7ED8001201EA /* NSObject+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Description.h"; sourceTree = "<group>"; };
+		6E04718218EB7ED8001201EA /* NSString+IAMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IAMUtils.h"; sourceTree = "<group>"; };
+		6E04718318EB7ED8001201EA /* OAuthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthToken.h; sourceTree = "<group>"; };
+		6E04718418EB7ED8001201EA /* SegmentationDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentationDetails.h; sourceTree = "<group>"; };
+		6E04718518EB7ED8001201EA /* TestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCase.h; sourceTree = "<group>"; };
+		6E04718618EB7ED8001201EA /* TypeMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeMetaData.h; sourceTree = "<group>"; };
 		6E2921E818875A9300835BBD /* InAppMessagingSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppMessagingSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2921EB18875A9300835BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E2921ED18875A9300835BBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,11 +158,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E04718718EB7ED8001201EA /* libInAppMessaging-.a in Frameworks */,
 				6E8B94171898777100A51D00 /* AddressBook.framework in Frameworks */,
 				6E8B94181898777100A51D00 /* AddressBookUI.framework in Frameworks */,
 				6E29222718875BC800835BBD /* SystemConfiguration.framework in Frameworks */,
 				6E29222518875BC200835BBD /* MobileCoreServices.framework in Frameworks */,
-				6E29222318875BBE00835BBD /* libInAppMessaging.a in Frameworks */,
 				6E2921EE18875A9300835BBD /* CoreGraphics.framework in Frameworks */,
 				6E2921F018875A9300835BBD /* UIKit.framework in Frameworks */,
 				6E2921EC18875A9300835BBD /* Foundation.framework in Frameworks */,
@@ -146,9 +183,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E04716118EB7ED8001201EA /* InAppMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				6E04716218EB7ED8001201EA /* ATTAppConfiguration.h */,
+				6E04716318EB7ED8001201EA /* ATTOAuthClient.h */,
+				6E04716418EB7ED8001201EA /* ATTOAuthViewController.h */,
+				6E04716518EB7ED8001201EA /* ATTRequest.h */,
+				6E04716618EB7ED8001201EA /* ATTRequestManager.h */,
+				6E04716718EB7ED8001201EA /* Base64.h */,
+				6E04716818EB7ED8001201EA /* DataTests.h */,
+				6E04716918EB7ED8001201EA /* IAMCreateMessageIndexRequest.h */,
+				6E04716A18EB7ED8001201EA /* IAMDeleteMessageRequest.h */,
+				6E04716B18EB7ED8001201EA /* IAMDeleteMessagesRequest.h */,
+				6E04716C18EB7ED8001201EA /* IAMDelta.h */,
+				6E04716D18EB7ED8001201EA /* IAMDeltaDetail.h */,
+				6E04716E18EB7ED8001201EA /* IAMDeltasUpdateRequest.h */,
+				6E04716F18EB7ED8001201EA /* IAMDeltasUpdateResponse.h */,
+				6E04717018EB7ED8001201EA /* IAMManager.h */,
+				6E04717118EB7ED8001201EA /* IAMMessage.h */,
+				6E04717218EB7ED8001201EA /* IAMMessageContentRequest.h */,
+				6E04717318EB7ED8001201EA /* IAMMessageIndexInfo.h */,
+				6E04717418EB7ED8001201EA /* IAMMessageIndexInfoRequest.h */,
+				6E04717518EB7ED8001201EA /* IAMMessageRequest.h */,
+				6E04717618EB7ED8001201EA /* IAMMessagesListRequest.h */,
+				6E04717718EB7ED8001201EA /* IAMNotificationConnection.h */,
+				6E04717818EB7ED8001201EA /* IAMNotificationConnectionRequest.h */,
+				6E04717918EB7ED8001201EA /* IAMQueue.h */,
+				6E04717A18EB7ED8001201EA /* IAMSendMessageRequest.h */,
+				6E04717B18EB7ED8001201EA /* IAMUpdateMessageRequest.h */,
+				6E04717C18EB7ED8001201EA /* IAMUpdateMessagesRequest.h */,
+				6E04717D18EB7ED8001201EA /* IAMUtils.h */,
+				6E04717E18EB7ED8001201EA /* JSONParser.h */,
+				6E04717F18EB7ED8001201EA /* libInAppMessaging-.a */,
+				6E04718018EB7ED8001201EA /* MMSContent.h */,
+				6E04718118EB7ED8001201EA /* NSObject+Description.h */,
+				6E04718218EB7ED8001201EA /* NSString+IAMUtils.h */,
+				6E04718318EB7ED8001201EA /* OAuthToken.h */,
+				6E04718418EB7ED8001201EA /* SegmentationDetails.h */,
+				6E04718518EB7ED8001201EA /* TestCase.h */,
+				6E04718618EB7ED8001201EA /* TypeMetaData.h */,
+			);
+			path = InAppMessaging;
+			sourceTree = "<group>";
+		};
 		6E2921DF18875A9300835BBD = {
 			isa = PBXGroup;
 			children = (
+				6E04716118EB7ED8001201EA /* InAppMessaging */,
 				6E2921F118875A9300835BBD /* InAppMessagingSampleApp */,
 				6E29221018875A9400835BBD /* InAppMessagingSampleAppTests */,
 				6E2921EA18875A9300835BBD /* Frameworks */,
@@ -530,13 +612,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode-5.0.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
-					"../InAppMessaging/**",
+					InAppMessaging,
 				);
 				INFOPLIST_FILE = "InAppMessagingSampleApp/InAppMessagingSampleApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../InAppMessaging/**",
+					InAppMessaging,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -560,13 +642,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode-5.0.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
-					"../InAppMessaging/**",
+					InAppMessaging,
 				);
 				INFOPLIST_FILE = "InAppMessagingSampleApp/InAppMessagingSampleApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../InAppMessaging/**",
+					InAppMessaging,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
