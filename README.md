@@ -8,16 +8,14 @@ The In-App Messaging SDK  is an iOS library for natively consuming the RESTful r
 
 # Quick start
 
-1. Open `InAppMessagingSampleApp.xcodeproj` 
-2. Set your OAuth credentials
-
+* Open `InAppMessagingSampleApp.xcodeproj` 
+* Set your OAuth credentials
 ```objc
     -- AppDelegate.m --
     NSString* const AppKey= @APP_KEY;
     NSString* const AppSecret= @APP_SECRET;
 ```
-
-3. Run the `InAppMessagingSampleAp` target.
+* Run the `InAppMessagingSampleAp` target.
 
 # Overview
 
