@@ -52,8 +52,6 @@ AT&T's In-App Messaging SDK abstracts away the networking layer by providing a r
     }];
 ```
 
-[See more usage examples](#usage)
-
 # Using the In-App Messaging SDK in your App
 
 
